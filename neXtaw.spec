@@ -15,6 +15,7 @@ Source:    %{name}-%{version}.tar.bz2
 License:   GPL-like
 Group:     System/Libraries
 Buildrequires: X11-devel
+BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description 
 A replacement library for the Athena (libXaw) widget set.
