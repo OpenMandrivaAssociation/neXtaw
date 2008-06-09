@@ -52,9 +52,13 @@ rm -rf $RPM_BUILD_ROOT
 %install
 %makeinstall includedir=$RPM_BUILD_ROOT/usr/X11R6/include
 
+%if %mdkversion < 200900
 %post -n %{libname} -p /sbin/ldconfig
+%endif
 
+%if %mdkversion < 200900
 %postun -n %{libname} -p /sbin/ldconfig
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
