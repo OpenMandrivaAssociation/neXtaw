@@ -1,6 +1,6 @@
 %define name neXtaw
 %define version 0.15.1
-%define release %mkrel 8
+%define release %mkrel 9
  
 %define major 0
 %define libname  %mklibname %name %{major}
@@ -15,7 +15,10 @@ Source:    %{name}-%{version}.tar.bz2
 Patch0:    neXtaw-0.15.1-fix-link.patch
 License:   GPL-like
 Group:     System/Libraries
-Buildrequires: X11-devel
+Buildrequires: libx11-devel
+BuildRequires: libxext-devel
+BuildRequires: libxmu-devel
+BuildRequires: libxt-devel
 BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description 
