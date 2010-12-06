@@ -1,6 +1,6 @@
 %define name neXtaw
 %define version 0.15.1
-%define release %mkrel 9
+%define release %mkrel 10
  
 %define major 0
 %define libname  %mklibname %name %{major}
