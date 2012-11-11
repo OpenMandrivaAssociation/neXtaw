@@ -1,0 +1,26 @@
+--- aclocal.m4.link	2010-02-21 09:48:28.000000000 +0100
++++ aclocal.m4	2010-02-21 09:48:45.000000000 +0100
+@@ -29,8 +29,8 @@
+ AC_CHECK_FUNCS(wslen wscpy wsncpy)
+ 
+ LDFLAGS="$LDFLAGS $X_LIBS"
+-dnl AC_CHECK_LIB(X11, main)
+-dnl AC_CHECK_LIB(Xt, main)
++AC_CHECK_LIB(X11, main)
++AC_CHECK_LIB(Xt, main)
+ AC_CHECK_LIB(Xext, main)
+ AC_CHECK_LIB(Xmu, main)
+ 
+--- acinclude.m4.link	2010-02-21 09:48:23.000000000 +0100
++++ acinclude.m4	2010-02-21 09:48:37.000000000 +0100
+@@ -16,8 +16,8 @@
+ AC_CHECK_FUNCS(wslen wscpy wsncpy)
+ 
+ LDFLAGS="$LDFLAGS $X_LIBS"
+-dnl AC_CHECK_LIB(X11, main)
+-dnl AC_CHECK_LIB(Xt, main)
++AC_CHECK_LIB(X11, main)
++AC_CHECK_LIB(Xt, main)
+ AC_CHECK_LIB(Xext, main)
+ AC_CHECK_LIB(Xmu, main)
+ 
