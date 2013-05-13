@@ -16,9 +16,9 @@ Patch0:    neXtaw-0.15.1-fix-link.patch
 License:   GPL-like
 Group:     System/Libraries
 Buildrequires: libx11-devel
-BuildRequires: libxext-devel
-BuildRequires: libxmu-devel
-BuildRequires: libxt-devel
+BuildRequires: pkgconfig(xext)
+BuildRequires: pkgconfig(xmu)
+BuildRequires: pkgconfig(xt)
 BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description 
