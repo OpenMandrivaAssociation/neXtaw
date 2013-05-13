@@ -1,6 +1,6 @@
 %define name neXtaw
 %define version 0.15.1
-%define release %mkrel 10
+%define release  11
  
 %define major 0
 %define libname  %mklibname %name %{major}
@@ -19,7 +19,6 @@ Buildrequires: libx11-devel
 BuildRequires: pkgconfig(xext)
 BuildRequires: pkgconfig(xmu)
 BuildRequires: pkgconfig(xt)
-BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description 
 A replacement library for the Athena (libXaw) widget set.
