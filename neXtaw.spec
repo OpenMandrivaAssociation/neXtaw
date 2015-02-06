@@ -5,7 +5,7 @@
 Summary:    A NeXt lookalike widget set
 Name:      neXtaw
 Version:   0.15.1
-Release:   12
+Release:   13
 URL:        http://siag.nu/neXtaw/#download
 Source:    %{name}-%{version}.tar.bz2
 Patch0:    neXtaw-0.15.1-fix-link.patch
