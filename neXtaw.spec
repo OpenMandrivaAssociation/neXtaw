@@ -11,6 +11,11 @@ Source:    %{name}-%{version}.tar.bz2
 Patch0:    neXtaw-0.15.1-fix-link.patch
 License:   GPL-like
 Group:     System/Libraries
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xext)
 BuildRequires: pkgconfig(xmu)
